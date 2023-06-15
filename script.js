@@ -2,6 +2,8 @@ const hour = document.getElementById('hour');
 const minute = document.getElementById('minute');
 const seconds = document.getElementById('seconds');
 
+
+//? setInterval ile sürekli bu kodu döndürüyoruz.
 const clock = setInterval(() =>{
 
     const dateNow = new Date();
@@ -18,4 +20,7 @@ const clock = setInterval(() =>{
     minute.textContent = min;
     seconds.textContent = sec;
 
-});
+},500);
+
+// * padStart' incelemek isteyenler için w3school linki
+// * https://www.w3schools.com/jsref/jsref_string_padstart.asp
